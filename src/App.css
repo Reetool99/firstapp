@@ -7,6 +7,65 @@
   pointer-events: none;
 }
 
+.fetch_li {
+  border: 2px solid grey;
+  list-style: none;
+  padding: 5px 5px;
+  margin: 5px 5px;
+  font-size: 20px;
+  color: grey;
+}
+
+.fetch_ul {
+  padding: 0px;
+}
+
+.loader {
+  border: 16px solid #F3F3F3;
+  border-radius: 50%;
+  border-top: 16px solid #3498DB;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+  margin: 50px 0px 0px 50px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.table_axios {
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+}
+
+th {
+  border: 1px solid rgb(227, 201, 201);
+  font-size: 20px;
+  padding: 5px 5px;
+  color: black
+}
+
+td {
+  border: 1px solid rgb(210, 185, 185);
+  font-size: 16px;
+  padding: 5px 5px;
+  background-color: #cbd7df;
+}
+
+.td_name:hover {
+  color: red;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -32,6 +91,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
